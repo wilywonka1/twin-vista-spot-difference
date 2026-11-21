@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twin Vista — Spot the Difference</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header id="hud">
+  <div class="hud-left"><span id="level-name">Twin Vista</span><span id="pips"></span></div>
+  <div class="hud-center"><span id="remaining">Find the differences</span>
+    <div id="timebar"><div id="timebar-fill"></div></div></div>
+  <div class="hud-right"><span id="time">0:00</span><span id="score">Score 0</span>
+    <button id="hint-btn">Hint</button></div>
+</header>
+<main id="stage">
+  <figure class="panel-wrap"><canvas id="panel-left" width="500" height="375"></canvas><figcaption>Original</figcaption></figure>
+  <figure class="panel-wrap"><canvas id="panel-right" width="500" height="375"></canvas><figcaption>Spot the changes</figcaption></figure>
+</main>
+<div id="overlay"></div>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
